@@ -114,7 +114,7 @@ hypothesis_results
 
 # Outlier detection for continuous and quasi-continuous features
 ordinalValues = [col for col in df_012.columns if df_012[col].nunique() >  15]
-# Boxplot for continuous/ordinal features
+# Boxplot for continuous/quasi- continuous features
 plt.figure(figsize=(8, 8))
 box = df_012[ordinalValues].boxplot(rot=90, patch_artist=True)
 for patch in box.artists:
